@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+    install:
+      commands:
+        - apk add python3 jq curl
+        - curl -O https://bootstrap.pypa.io/get-pip.py
+        - export PATH=$PATH:/$(whoami)/.local/bin
+        - python3 get-pip.py --user
+        - pip3 install awscli --upgrade --user
+    build:
+      commands:
+        - ./scripts/build.sh

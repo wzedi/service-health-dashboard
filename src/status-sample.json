@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "name": "secure-website", 
+      "status": "service--green",
+      "message": ""
+    },
+    {
+      "name": "website", 
+      "status": "service--green",
+      "message": ""
+    }
+  ]
+}
